@@ -1,0 +1,43 @@
+
+{
+    
+    "portfolio": [
+        {
+            "image": "/images/gericht.png",
+            "name": "Gericht Restaurant Web Application",
+            "description": "A food web application where users can search for meals and filter meals by category. Users can also learn about each meal by learning about the ingredients and add favourite ingredients to the ingredients page",
+            "github": "https://github.com/daniel-idowu-01/gericht",
+            "liveLink": "https://gericht-project.netlify.app/"
+        },
+        {
+            "image": "/images/e-store.png",
+            "name": "E-store Ecommerce Web Application",
+            "description": "An ecommerce web application where users can filter items by category, add items to favourites and also add items to cart.",
+            "github": "https://github.com/daniel-idowu-01/e-store",
+            "liveLink": "https://e-store-project01.netlify.app/"
+        },
+        {
+            "image": "/images/getlinked.png",
+            "name": "GetLinked AI",
+            "github": "https://github.com/daniel-idowu-01/getLinked",
+            "description": "A quiz web application where users can answer questions based on sports and get the result of their test after answering the questions.",
+            "liveLink": "https://getlinkedapp.netlify.app/"
+        },
+        {
+            "image": "/images/elitetv.png",
+            "name": "EliteTV - Movie Web Application",
+            "description": "A movie web application where movies are recommended to users based on description and ratings. Users can also search for any movie of preference to know more about the movie.",
+            "github": "https://github.com/daniel-idowu-01/elite-tv",
+            "liveLink": "https://elitetv.netlify.app/"
+        },
+        
+        {
+            "image": "/images/adrespect.png",
+            "name": "AdRespect Website",
+            "description": "A company's website with amazing user-interface and animations. N.B: This is a recruitment task for a company based in Poland.",
+            "github": "https://github.com/daniel-idowu-01/adrespect",
+            "liveLink": "https://adrespect-recruit.netlify.app/"
+        }
+        
+    ]
+}

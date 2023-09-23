@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face {
+    font-family: 'Cormorant Upright';
+    src: 
+         url('./font/CormorantUpright-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+  }
+
+  .cormorant {
+    font-family: 'Cormorant Upright';
+  }
+
+  .my-image {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 12rem 12rem 0 0;
+    left: calc(50% - 10rem);
+    background: linear-gradient(#686071, transparent);
+    filter: brightness(90%);
+  }
+
+  .nav {
+    left: calc(50% - 11.2rem);
+    top: calc(50% + 15rem);
+  }
+
+  .active {
+    background-color: #362934;
+    transform: scale(1.2);
+  }
+
+  .imggg {
+    background: linear-gradient(27deg, transparent, #362934);
+  }
+
+  .experience-container {
+    width: calc(100% - 2rem);
+  }
+
+  .rounded-bottom {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .rounded-2rem {
+    border-radius: 2rem;
+  }
