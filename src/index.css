@@ -1,50 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Cormorant Upright';
-    src: 
-         url('./font/CormorantUpright-Regular.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-  }
+  font-family: 'Cormorant Upright';
+  src: 
+    url('./font/CormorantUpright-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-  .cormorant {
-    font-family: 'Cormorant Upright';
-  }
+.montserrat {
+  font-family: 'Montserrat';
+}
 
-  .my-image {
-    width: 20rem;
-    height: 30rem;
-    border-radius: 12rem 12rem 0 0;
-    left: calc(50% - 10rem);
-    background: linear-gradient(#686071, transparent);
-    filter: brightness(90%);
-  }
+.cormorant {
+  font-family: 'Cormorant Upright';
+}
 
-  .nav {
-    left: calc(50% - 11.2rem);
-    top: calc(50% + 15rem);
-  }
+.my-image {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 12rem 12rem 0 0;
+  left: calc(50% - 10rem);
+  background: linear-gradient(#686071, transparent);
+  filter: brightness(90%);
+}
 
-  .active {
-    background-color: #362934;
-    transform: scale(1.2);
-  }
+.nav {
+  left: calc(50% - 11.2rem);
+  top: calc(50% + 15rem);
+}
 
-  .imggg {
-    background: linear-gradient(27deg, transparent, #362934);
-  }
+.active {
+  background-color: #362934;
+  transform: scale(1.2);
+}
 
-  .experience-container {
-    width: calc(100% - 2rem);
-  }
+.imggg {
+  background: linear-gradient(27deg, transparent, #362934);
+}
 
-  .rounded-bottom {
-    border-radius: 0 0 2rem 2rem;
-  }
+/* .experience-container {
+  width: calc(100% - 2rem);
+} */
 
-  .rounded-2rem {
-    border-radius: 2rem;
-  }
+.rounded-bottom {
+  border-radius: 0 0 2rem 2rem;
+}
+
+.rounded-2rem {
+  border-radius: 2rem;
+}

@@ -11,8 +11,9 @@ const PortfolioComponent = ({ image, name, github, liveLink, description}) => {
       <div>
         <img src={image} alt='' />
       </div>
-      <div className='flex flex-col bg-primary-color p-3 rounded-br-2xl rounded-bl-2xl flex-1'>
+      <div className='flex flex-col gap-3 bg-primary-color p-3 rounded-br-2xl rounded-bl-2xl flex-1'>
         <h3 className='text-secondary-color text-xl underline mb-2 font-semibold'>{name}</h3>
+        <p>{description}</p>
         <div className='flex gap-3'>
           <a href={github} target='_blank'
             className={githubStyle}>Github</a>

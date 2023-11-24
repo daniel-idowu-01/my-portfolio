@@ -1,10 +1,6 @@
 import React from 'react'
 import '../index.css'
 import testimonialData from '../testimonialData.json'
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper/modules';
@@ -18,37 +14,14 @@ import 'swiper/css/pagination';
 
 const Testimonials = () => {
 
-  const {ref, inView} = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    /* animation when in view */
-    if(inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: 'string', duration: 0.5, bounce: 0.3
-        }
-      })
-    }
-
-    /* animation when not in view */
-    if(!inView) {
-      animation.start({
-        x: '-100vw'
-      })
-    }
-
-  }, [inView])
-
   return (
-    <section ref={ref} className='text-white pt-20' id='testimonials'>
+    <section className='text-white pt-20' id='testimonials'>
       <div className='text-center text-white text-opacity-80 flex flex-col gap-1'>
         <h5 className='text-center text-xs text-white text-opacity-80'>Review From Clients</h5>
         <h2 className='text-center text-xl text-primary-color'>Testimonials</h2>
       </div>
 
-      <motion.div animate={animation} className='flex justify-center mt-5 mx-5 md:mx-10'>
+      <div className='flex justify-center mt-5 mx-5 md:mx-10'>
         <Swiper className='w-full md:w-2/6'
         // install Swiper modules
           modules={[ Pagination ]}
@@ -73,7 +46,7 @@ const Testimonials = () => {
           })
         }
         </Swiper>
-      </motion.div>
+      </div>
     </section>
   )
 }

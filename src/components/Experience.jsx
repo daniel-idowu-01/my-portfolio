@@ -1,49 +1,22 @@
 import React from 'react'
 import '../index.css'
-import { BsPatchCheckFill } from 'react-icons/bs' 
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
+import { BsPatchCheckFill } from 'react-icons/bs'
 
 const Experience = () => {
 
-  const {ref, inView} = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    /* animation when in view */
-    if(inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: 'string', duration: 0.5, bounce: 0.3
-        }
-      })
-    }
-
-    /* animation when not in view */
-    if(!inView) {
-      animation.start({
-        x: '-100vw'
-      })
-    }
-
-  }, [inView])
-
   return (
-    <section ref={ref} id='experience' className='pt-20 text-white'>
+    <section id='experience' className='pt-20 text-white'>
       <div className='text-center text-white text-opacity-80 flex flex-col gap-1'>
         <h5 className='text-center text-xs text-white text-opacity-80'>What Skills I have</h5>
         <h2 className='text-center text-xl text-primary-color'>My Experience</h2>
       </div>
 
       {/* Experience container to house the front-end and data analysis skills */}
-      <motion.div animate={animation} className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10 mx-5 md:mx-10 mt-5'>
+      <div className='flex gap-3 sm:justify-around flex-col sm:flex-row mt-10'>
         {/* Frontend */}
-        <div className='border border-secondary-color bg-secondary-color p-8 md:px-20 rounded-2xl hover:bg-transparent transition-all experience-container'>
+        <div className='border border-secondary-color bg-secondary-color p-8 md:px-20 rounded-2xl hover:bg-transparent transition-all experience-container sm:w-[40%]'>
           <h3 className='text-center mb-8 text-primary-color text-xl'>Frontend Development</h3>
-          <div className='grid grid-cols-2  gap-y-8'>
+          <div className='grid grid-cols-2 gap-y-8'>
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
@@ -94,14 +67,14 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Data Analysis */}
-        <div className='border border-secondary-color bg-secondary-color p-8 md:px-20 rounded-2xl hover:bg-transparent transition-all experience-container'>
-          <h3 className='text-center mb-8 text-primary-color text-xl'>Data Analysis</h3>
+        {/* Backend Development */}
+        <div className='border border-secondary-color bg-secondary-color p-8 md:px-20 rounded-2xl hover:bg-transparent transition-all experience-container sm:w-[40%]'>
+          <h3 className='text-center mb-8 text-primary-color text-xl'>Backend Development</h3>
           <div className='grid grid-cols-2  gap-y-8'>
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
-                <h4>Excel</h4>
+                <h4>MongoDB</h4>
                 <small className='text-white text-opacity-80'>Experienced</small>
               </div>
             </article>
@@ -109,7 +82,7 @@ const Experience = () => {
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
-                <h4>PowerBI</h4>
+                <h4>Express</h4>
                 <small className='text-white text-opacity-80'>Experienced</small>
               </div>
             </article>
@@ -117,7 +90,7 @@ const Experience = () => {
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
-                <h4>Python</h4>
+                <h4>NodeJS</h4>
                 <small className='text-white text-opacity-80'>Intermediate</small>
               </div>
             </article>
@@ -125,7 +98,7 @@ const Experience = () => {
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
-                <h4>MySQL</h4>
+                <h4>PHP</h4>
                 <small className='text-white text-opacity-80'>Intermediate</small>
               </div>
             </article>
@@ -133,14 +106,22 @@ const Experience = () => {
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
               <div>
-                <h4>R</h4>
+                <h4>Firebase</h4>
+                <small className='text-white text-opacity-80'>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
+              <BsPatchCheckFill className='mt-1 text-primary-color' />
+              <div>
+                <h4>Supabase</h4>
                 <small className='text-white text-opacity-80'>Intermediate</small>
               </div>
             </article>
 
           </div>
         </div>
-      </motion.div>
+      </div>
       
     </section >
   )

@@ -2,10 +2,6 @@ import React from 'react'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 import { BsLinkedin, BsWhatsapp, BsGithub } from 'react-icons/bs'
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
 
 const Contact = () => {
   const form = useRef();
@@ -17,38 +13,14 @@ const Contact = () => {
     e.target.reset()
   };
 
-   // For sliding animations
-  const {ref, inView} = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    /* animation when in view */
-    if(inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: 'string', duration: 0.5, bounce: 0.3
-        }
-      })
-    }
-
-    /* animation when not in view */
-    if(!inView) {
-      animation.start({
-        x: '-100vw'
-      })
-    }
-
-  }, [inView])
-
   return (
-    <section ref={ref} id='contact' className='pt-20 text-white pb-40'>
+    <section id='contact' className='pt-20 text-white pb-40'>
       <div className='text-center text-white text-opacity-80 flex flex-col gap-1'>
         <h5 className='text-center text-xs text-white text-opacity-80'>Get In Touch</h5>
         <h2 className='text-center text-xl text-primary-color'>Contact Me</h2>
       </div>
 
-      <motion.div animate={animation} className='flex flex-col md:flex-row gap-5 justify-center mt-5 mx-5 md:mx-10'>
+      <div className='flex flex-col md:flex-row gap-5 justify-center mt-5 mx-5 md:mx-10'>
         <section className='grid grid-cols-1 gap-3 md:w-1/4'>
           {/* Email */}
           <article
@@ -99,7 +71,7 @@ const Contact = () => {
              type='submit'>Send Message</button>
           </form>
         </section>
-      </motion.div>
+      </div>
     </section>
   )
 }

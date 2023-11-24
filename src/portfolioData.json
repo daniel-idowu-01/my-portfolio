@@ -12,7 +12,7 @@
         {
             "image": "/images/e-store.png",
             "name": "E-store Ecommerce Web Application",
-            "description": "An ecommerce web application where users can filter items by category, add items to favourites and also add items to cart.",
+            "description": "An ecommerce web application where users can filter items by category, add items to favourites and also add items to cart",
             "github": "https://github.com/daniel-idowu-01/e-store",
             "liveLink": "https://e-store-project01.netlify.app/"
         },
@@ -20,21 +20,21 @@
             "image": "/images/getlinked.png",
             "name": "GetLinked AI",
             "github": "https://github.com/daniel-idowu-01/getLinked",
-            "description": "A quiz web application where users can answer questions based on sports and get the result of their test after answering the questions.",
+            "description": "An hackathon project with aesthetic user interface. User can send POST requests to backend",
             "liveLink": "https://getlinkedapp.netlify.app/"
         },
         {
             "image": "/images/elitetv.png",
             "name": "EliteTV - Movie Web Application",
-            "description": "A movie web application where movies are recommended to users based on description and ratings. Users can also search for any movie of preference to know more about the movie.",
+            "description": "A movie web application where movies are recommended to users based on description and ratings. Users can also search for any movie of preference to know more about the movie",
             "github": "https://github.com/daniel-idowu-01/elite-tv",
-            "liveLink": "https://elitetv.netlify.app/"
+            "liveLink": "https://theelitetv.netlify.app/"
         },
         
         {
             "image": "/images/adrespect.png",
             "name": "AdRespect Website",
-            "description": "A company's website with amazing user-interface and animations. N.B: This is a recruitment task for a company based in Poland.",
+            "description": "A company's website with amazing user-interface and animations. N.B: This is a recruitment task for a company based in Poland",
             "github": "https://github.com/daniel-idowu-01/adrespect",
             "liveLink": "https://adrespect-recruit.netlify.app/"
         }

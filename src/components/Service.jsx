@@ -1,45 +1,18 @@
 import React from 'react'
 import '../index.css'
 import { BiCheck } from 'react-icons/bi'
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
 
 const Service = () => {
 
-  const {ref, inView} = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    /* animation when in view */
-    if(inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: 'string', duration: 0.5, bounce: 0.3
-        }
-      })
-    }
-
-    /* animation when not in view */
-    if(!inView) {
-      animation.start({
-        x: '-100vw'
-      })
-    }
-
-  }, [inView])
-
   return (
-    <section ref={ref} id='services' className='pt-20 text-white'>
+    <section id='services' className='pt-20 text-white'>
       <div className='text-center text-white text-opacity-80 flex flex-col gap-1'>
         <h5 className='text-center text-xs text-white text-opacity-80'>What I Offer</h5>
         <h2 className='text-center text-xl text-primary-color'>Services</h2>
       </div>
 
       {/* Container div to house my services */}
-      <motion.div animate={animation} className='grid grid-cols-1 md:grid-cols-3 gap-3 mx-5 md:mx-10 mt-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mx-5 md:mx-10 mt-5'>
 
       {/* Web Development */}
         <article>
@@ -143,7 +116,7 @@ const Service = () => {
           
         </article>
 
-      </motion.div>
+      </div>
     </section>
   )
 }
