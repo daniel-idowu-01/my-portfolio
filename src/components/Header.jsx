@@ -29,7 +29,7 @@ const Header = () => {
             }}>
           </Typewriter>
           </p>
-          <p>FullStack Web Developer</p>
+          <p>Frontend Web Developer</p>
           <div className='flex justify-between gap-3 mt-3'>
             <a href={CV}
               download

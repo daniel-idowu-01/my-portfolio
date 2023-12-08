@@ -12,14 +12,14 @@ const Experience = () => {
       </div>
 
       {/* Experience container to house the front-end and data analysis skills */}
-      <div className='flex gap-3 sm:justify-around flex-col sm:flex-row mt-10'>
+      <div className='flex gap-3 sm:justify-around flex-col sm:flex-row mt-10 mx-5 md:mx-10'>
         {/* Frontend */}
         <div className='border border-secondary-color bg-secondary-color p-8 md:px-20 rounded-2xl hover:bg-transparent transition-all experience-container sm:w-[40%]'>
           <h3 className='text-center mb-8 text-primary-color text-xl'>Frontend Development</h3>
           <div className='grid grid-cols-2 gap-y-8'>
             <article className='flex gap-2 md:gap-0 md:justify-between md:w-1/2'> {/* Article reps each Item */}
               <BsPatchCheckFill className='mt-1 text-primary-color' />
-              <div>
+              <div className=''>
                 <h4>HTML</h4>
                 <small className='text-white text-opacity-80'>Experienced</small>
               </div>

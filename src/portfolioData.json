@@ -3,30 +3,37 @@
     
     "portfolio": [
         {
+            "image": "/images/aidoc.png",
+            "name": "AI Doc",
+            "description": "An AI-powered symptom and guidance web application that provides general medical information and guidance to patients",
+            "github": "https://github.com/daniel-idowu-01/AI-Doc",
+            "liveLink": "https://ai-doc.netlify.app/"
+        },
+        {
             "image": "/images/gericht.png",
-            "name": "Gericht Restaurant Web Application",
-            "description": "A food web application where users can search for meals and filter meals by category. Users can also learn about each meal by learning about the ingredients and add favourite ingredients to the ingredients page",
+            "name": "Gericht Restaurant",
+            "description": "A restaurant web application that provides users with food lists, ingredients, and procedures to prepare the meals",
             "github": "https://github.com/daniel-idowu-01/gericht",
-            "liveLink": "https://gericht-project.netlify.app/"
+            "liveLink": "https://gericht-meals.netlify.app/"
         },
         {
             "image": "/images/e-store.png",
-            "name": "E-store Ecommerce Web Application",
-            "description": "An ecommerce web application where users can filter items by category, add items to favourites and also add items to cart",
+            "name": "E-store",
+            "description": "An ecommerce web application that provides users with clothes, accessories and gadgets for purchase",
             "github": "https://github.com/daniel-idowu-01/e-store",
-            "liveLink": "https://e-store-project01.netlify.app/"
+            "liveLink": "https://shopbliss.netlify.app/"
         },
         {
             "image": "/images/getlinked.png",
             "name": "GetLinked AI",
             "github": "https://github.com/daniel-idowu-01/getLinked",
-            "description": "An hackathon project with aesthetic user interface. User can send POST requests to backend",
+            "description": "An hackathon project with aesthetic user interface where users can register their team",
             "liveLink": "https://getlinkedapp.netlify.app/"
         },
         {
             "image": "/images/elitetv.png",
-            "name": "EliteTV - Movie Web Application",
-            "description": "A movie web application where movies are recommended to users based on description and ratings. Users can also search for any movie of preference to know more about the movie",
+            "name": "EliteTV",
+            "description": "A movie web application where that provides users with movies based on categories",
             "github": "https://github.com/daniel-idowu-01/elite-tv",
             "liveLink": "https://theelitetv.netlify.app/"
         },
@@ -34,7 +41,7 @@
         {
             "image": "/images/adrespect.png",
             "name": "AdRespect Website",
-            "description": "A company's website with amazing user-interface and animations. N.B: This is a recruitment task for a company based in Poland",
+            "description": "A company's website with amazing user-interface and animations",
             "github": "https://github.com/daniel-idowu-01/adrespect",
             "liveLink": "https://adrespect-recruit.netlify.app/"
         }

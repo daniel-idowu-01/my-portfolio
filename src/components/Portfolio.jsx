@@ -1,11 +1,6 @@
 import React from 'react'
 import portfolioData from '../portfolioData.json'
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
 import PortfolioComponent from './PortfolioComponent';
-import Typewriter from 'typewriter-effect'
 
 const Portfolio = () => {
 
@@ -17,13 +12,14 @@ const Portfolio = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-3 justify-center gap-5 mt-5 mx-5 md:mx-10'>
-        { portfolioData.portfolio.map((portfolio) => (
+        { portfolioData.portfolio.map((portfolio, index) => (
           <PortfolioComponent
-           image={portfolio.image}
-           name={portfolio.name}
-           description={portfolio.description}
-           github={portfolio.github}
-           liveLink={portfolio.liveLink}
+            key={index}
+            image={portfolio.image}
+            name={portfolio.name}
+            description={portfolio.description}
+            github={portfolio.github}
+            liveLink={portfolio.liveLink}
           />
         ))}
       </div>

@@ -1,9 +1,21 @@
 import React from 'react'
 import ME from '../src-images/newImg.jpg'
+import ME1 from '../src-images/me1.jpg'
+import ME2 from '../src-images/me2.jpg'
 import AboutCard from './AboutCard'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+import './About.css';
+
+// import required modules
+import { EffectCards } from 'swiper/modules';
 
 const About = () => {
 
@@ -18,8 +30,30 @@ const About = () => {
        className='md:flex justify-around items-stretch mt-10'>
         {/* About Image */}
          <div className='flex justify-center items-center'>
-            <div className='imggg w-72 md:w-80 rounded-3xl md:ml-20'>
-              <img src={ ME} alt='' className='rounded-3xl rotate-12 hover:rotate-0 overflow-hidden transition-all' />
+          <div className='w-72 md:w-80 rounded-3xl md:ml-20'>
+            <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={ME} alt='' className='rounded-3xl overflow-hidden transition-all' />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={ME1} alt='' className='rounded-3xl overflow-hidden transition-all' />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={ME2} alt='' className='rounded-3xl overflow-hidden transition-all' />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={ME} alt='' className='rounded-3xl overflow-hidden transition-all' />
+              </SwiperSlide>
+            </Swiper>
+              
             </div>
          </div>
 
@@ -33,9 +67,8 @@ const About = () => {
             <AboutCard icon={ <VscFolderLibrary /> } title='Projects' detail='8+ Completed' />
           </div>
           
-
           <p className='w-[80%] md:w-full text-white text-justify'>  
-            Full-stack developer with 2+ years of experience building and maintaining scalable web applications. Proven ability to work on all aspects of the development process, from back-end to front-end. Expertise in Python, JavaScript, HTML, CSS, and SQL. Passionate about building innovative and user-friendly products.
+            Frontend developer with 2+ years of experience building and maintaining scalable web applications. Proven ability to work on all aspects of the development process, from back-end to front-end. Expertise in Python, JavaScript, HTML, CSS, and SQL. Passionate about building innovative and user-friendly products.
           </p>
 
           <a
