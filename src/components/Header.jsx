@@ -31,8 +31,7 @@ const Header = () => {
           </p>
           <p>Frontend Web Developer</p>
           <div className='flex justify-between gap-3 mt-3'>
-            <a href={CV}
-              download
+            <a href='https://drive.google.com/file/d/1csumvt29cJ068uP1wNjd-E2bDDshWf3f/view?usp=drive_link'
              className='border border-primary-color p-3 px-4 rounded-md text-primary-color hover:border-white hover:text-opacity-80 hover:text-white hover:border-opacity-80'>Download CV</a>
             <a
              href='https://wa.me/+2349028686300'
