@@ -41,7 +41,7 @@ const Testimonials = () => {
                   <h4 className='font-semibold'>{testimonial.name}</h4>
                   <p className=' font-light mx-auto'>{testimonial.comment}</p>
                 </div>
-                </SwiperSlide>
+              </SwiperSlide>
             )
           })
         }

@@ -3,6 +3,13 @@
     
     "portfolio": [
         {
+            "image": "/images/iRead.png",
+            "name": "iRead",
+            "description": "A platform where users can sell and purchase books of various categories and get information on the various books",
+            "github": "https://github.com/daniel-idowu-01/techbooks",
+            "liveLink": "https://ireadlib.netlify.app/"
+        },
+        {
             "image": "/images/aidoc.png",
             "name": "AI Doc",
             "description": "An AI-powered symptom and guidance web application that provides general medical information and guidance to patients",
