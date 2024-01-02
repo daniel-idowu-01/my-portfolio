@@ -15,9 +15,9 @@ const PortfolioComponent = ({ image, name, github, liveLink, description}) => {
         <h3 className='text-secondary-color text-xl underline mb-2 font-semibold'>{name}</h3>
         <p>{description}</p>
         <div className='flex gap-3'>
-          <a href={github} target='_blank'
+          <a rel="noopener noreferrer" href={github} target='_blank'
             className={githubStyle}>Github</a>
-          <a href={liveLink} target='_blank'
+          <a rel="noopener noreferrer" href={liveLink} target='_blank'
             className={liveLinkStyle}>Live Demo</a>
         </div>
         

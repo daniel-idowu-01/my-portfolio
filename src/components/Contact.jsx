@@ -29,7 +29,7 @@ const Contact = () => {
             <div>
               <h4 className='font-semibold'>LinkedIn</h4>
               <h5 className='text-sm'>daniel-idowu</h5>
-              <a href='https://www.linkedin.com/in/daniel-idowu/' target='_blank' className='text-primary-color no-underline hover:underline'>Send a message</a>
+              <a href='https://www.linkedin.com/in/daniel-idowu/' target='_blank' rel="noopener noreferrer" className='text-primary-color no-underline hover:underline'>Send a message</a>
             </div>
           </article>
 
@@ -38,7 +38,7 @@ const Contact = () => {
             <BsWhatsapp className='mx-auto text-2xl'/>
             <h4 className='font-semibold'>Whatsapp</h4>
             <h5 className='text-sm'>+234 902 868 6300</h5>
-            <a href='https://wa.me/+2349028686300' target='_blank' className='text-primary-color no-underline hover:underline'>Send a message</a>
+            <a href='https://wa.me/+2349028686300' target='_blank'rel="noopener noreferrer" className='text-primary-color no-underline hover:underline'>Send a message</a>
           </article>
 
           {/* Instagram */}
@@ -46,7 +46,7 @@ const Contact = () => {
             <BsGithub className='mx-auto text-2xl' />
             <h4 className='font-semibold'>Github</h4>
             <h5 className='text-sm'>daniel-idowu-01</h5>
-            <a href='https://github.com/daniel-idowu-01' target='_blank' className='text-primary-color no-underline hover:underline'>Send a message</a>
+            <a href='https://github.com/daniel-idowu-01' target='_blank'rel="noopener noreferrer" className='text-primary-color no-underline hover:underline'>Send a message</a>
           </article>
 
         </section>

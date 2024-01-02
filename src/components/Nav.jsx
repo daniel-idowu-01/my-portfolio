@@ -15,24 +15,29 @@ const Nav = () => {
     <div
      className='fixed text-white text-opacity-80 flex justify-center gap-4 px-5 mx-10 py-4 backdrop-blur-xl rounded-full w-fit nav z-10'>
       <a
-      onClick={() => setActiveNav('#')}
-      className={`${activeNav === '#' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#'>
+       rel="noopener noreferrer" 
+       onClick={() => setActiveNav('#home')}
+       className={`${activeNav === '#home' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#home'>
          <AiOutlineHome /> 
       </a>
       <a 
-      onClick={() => setActiveNav('#about')}
-      className={`${activeNav === '#about' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#about'>
+       rel="noopener noreferrer"
+       onClick={() => setActiveNav('#about')}
+       className={`${activeNav === '#about' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#about'>
          <AiOutlineUser /> 
       </a>
       <a 
-      onClick={() => setActiveNav('#experience')}
-      className={`${activeNav === '#experience' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#experience'> <BiBook /> </a>
+       rel="noopener noreferrer"
+       onClick={() => setActiveNav('#experience')}
+       className={`${activeNav === '#experience' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#experience'> <BiBook /> </a>
       <a 
-      onClick={() => setActiveNav('#services')}
-      className={`${activeNav === '#services' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#services'> <RiServiceLine /> </a>
+       rel="noopener noreferrer"
+       onClick={() => setActiveNav('#services')}
+       className={`${activeNav === '#services' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#services'> <RiServiceLine /> </a>
       <a 
-      onClick={() => setActiveNav('#contact')}
-      className={`${activeNav === '#contact' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#contact'> <BiMessageSquareDetail /> </a>
+       rel="noopener noreferrer"
+       onClick={() => setActiveNav('#contact')}
+       className={`${activeNav === '#contact' ? 'active' : ''} p-2 text-2xl hover:bg-secondary-color rounded-full transition-all`} href='#contact'> <BiMessageSquareDetail /> </a>
     </div>
   )
 }

@@ -73,7 +73,8 @@ const About = () => {
 
           <a
            href='https://wa.me/+2349028686300'
-           target='_blank'
+            target='_blank'
+            rel="noopener noreferrer"
            className='block no-underline bg-primary-color text-white w-fit p-3 px-4 rounded-md hover:bg-transparent border border-primary-color hover:text-primary-color'>Let's Talk</a>
           
          </div>
